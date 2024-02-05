@@ -6,7 +6,7 @@ const dbConfigQoddi = {
 	host: "sql.freedb.tech",
 	user: "freedb_2350-main.",
 	password: "6rT5*F%5gRrdZft",
-	database: "Free DB",
+	database: "freedb_comp2350-week3-A01296033",
 	multipleStatements: false
 };
 
