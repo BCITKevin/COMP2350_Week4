@@ -1,24 +1,24 @@
 const mysql = require('mysql2/promise');
 
-const is_qoddi = process.env.IS_QODDI || false;
+const is_render = process.env.IS_RENDER || false;
 
 const dbConfigQoddi = {
-	host: "host",
-	user: "user",
-	password: "password",
-	database: "database",
+	host: "sql.freedb.tech",
+	user: "freedb_2350-main.",
+	password: "6rT5*F%5gRrdZft",
+	database: "Free DB",
 	multipleStatements: false
 };
 
 const dbConfigLocal = {
 	host: "localhost",
 	user: "root",
-	password: "Password",
-	database: "database1",
+	password: "kevin02gusgh02!",
+	database: "Local instance 3306",
 	multipleStatements: false
 };
 
-if (is_qoddi) {
+if (is_render) {
 	var database = mysql.createPool(dbConfigQoddi);
 }
 else {
